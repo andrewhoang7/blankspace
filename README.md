@@ -36,7 +36,7 @@ mobile journaling app that serves as a customizeable and secure space to place y
 * User can search for text
 
 
-**Optional Nice-to-have Stories**
+**Optional Stories**
 
 * User can customize environment in settings(i.e. color scheme, font format) 
 * User can have text save in real-time (similar to Google Docs)
@@ -82,8 +82,7 @@ mobile journaling app that serves as a customizeable and secure space to place y
 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="https://drive.google.com/uc?id=1F7G2VRVsNbFC3rqw0oDOFNide6cB1qOY" width=600>
+<img src="https://drive.google.com/uc?id=1X05hddYQgSJSX0pIEb6X_oZDy-6p94z3" width=600>
 
 
 ## Schema 
