@@ -64,9 +64,8 @@ mobile journaling app that serves as a customizeable and secure space to place y
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Profile
+* Settings
 
 **Flow Navigation** (Screen to Screen)
 
