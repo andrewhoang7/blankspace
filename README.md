@@ -86,10 +86,34 @@ mobile journaling app that serves as a customizeable and secure space to place y
 
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
-### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+| Propert       | Type          | Description  |
+| ------------- |:-------------:| -----:       |
+| journalid     | String        | unique id for journal entry |
+| subject       | String        | Subject title of journal entry |
+| content       | String        |  actual content of journal entry |
+| createdAt     | DateTime      | date when post is created (default field) |
+| updatedAt     | DateTime      | date when post is last updated (default field) |
+
+
+
+* Profile Screen
+   * -->(Read/GET) Query logged in user object
+   * -->(Update/PUT) Update user profile image
+
+* Home Screen
+   * -->Read/GET
+let query = PFQuery(className:"JournalEntry")
+query.whereKey("JournalEntry", equalTo: currentUser)
+query.order(byDescending: "createdAt")
+query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+    if let error = error {
+        print(error.localizedDescription)
+    } else if let posts = posts {
+        print("Successfully retrieved \(posts.count) posts.")
+        // TODO: Do something with your journal entries
+    }
+}
+
+* Create Post Screen
+   * -->(Create/POST) Create a new post object
